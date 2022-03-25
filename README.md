@@ -122,5 +122,5 @@ Lightweight and flexible Windows 11 build.
     - Fonts
     - System Files
 - Customize
-  - Import regestry files
+  - Import registry files
 - Remove [components](#removed)
