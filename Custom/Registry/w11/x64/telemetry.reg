@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+; Telemetry
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DiagTrack\Start] 
+"Start"=dword:4
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\WMI\Autologger\AutoLogger-DiagTrack-Listener]
+"Start"=dword:0
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection]
+"MaxTelemetryAllowed"=dword:0
+"AllowTelemetry"=dword:0
