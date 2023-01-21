@@ -18,5 +18,7 @@ echo Setting up your profile...
 attrib +r %UserProfile%
 del "%UserProfile%\Desktop\*.lnk"
 rd "%AppData%\Microsoft\Windows\Start Menu\Programs\Accessories" /S /Q
+schtasks /create /xml "C:\Windows\Keymapper\keymapperd.xml" /tn "\KeymapperD"
 schtasks /create /xml "C:\Windows\Keymapper\keymapper.xml" /tn "\Keymapper"
+schtasks /run /tn "\KeymapperD"
 schtasks /run /tn "\Keymapper"
