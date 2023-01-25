@@ -1,9 +1,9 @@
 Windows Registry Editor Version 5.00
 
 ; Recycle Bin
-[HKEY_USERS\DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
 "{031E4825-7B94-4DC3-B131-E946B44C8DD5}"=dword:00000001
 "{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001
-[HKEY_USERS\DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
 "{031E4825-7B94-4DC3-B131-E946B44C8DD5}"=dword:00000001
 "{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001

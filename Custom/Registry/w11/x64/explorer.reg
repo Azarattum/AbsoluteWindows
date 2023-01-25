@@ -4,6 +4,3 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "HideFileExt"=dword:0
 "LaunchTo"=dword:1
-[HKEY_USERS\Default\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"HideFileExt"=dword:0
-"LaunchTo"=dword:1
