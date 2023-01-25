@@ -5,7 +5,8 @@ Lightweight and flexible Windows 11 build.
 
 ## Added
 - [x] Patched to [bypass compatibility checks](https://github.com/JosephM101/Force-Windows-11-Install)
-- [x] Updated to [PowerShell 7](https://www.mediafire.com/folder/symg2n0rgcb8t/PowerShell7)
+- [x] Updated to [PowerShell 7](https://download.ru/folders/9Q7wRWOc)
+- [x] Included [C++ runtime](https://download.ru/folders/5wAAnH5F)
 - [x] Added [FiraCode NF](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) font
 - [x] Lightweight [hosts file](Custom/Files/w11/x64/Windows/System32/drivers/etc/hosts) to block telemetry
 - [x] Custom [powershell profile](Custom/Files/w11/x64/Users/Default/Documents/PowerShell/profile.ps1)
@@ -114,7 +115,8 @@ Lightweight and flexible Windows 11 build.
   - [keymapper.exe.txt](Custom/Files/w11/x64/Windows/Keymapper/keymapper.exe.txt)
   - [FiraCode NF.txt](Custom/Fonts/FiraCode%20NF.txt)
   - [btrfs.txt](Drivers/Install/w11/x64/btrfs.txt)
-  - [PowerShell7_w11.txt](Packs/PowerShell7/PowerShell7_w11.txt)
+  - [PowerShell7.txt](Packs/PowerShell7/PowerShell7.txt)
+  - [VC.txt](Packs/VC/w11/VC.txt)
 - Integrate
   - Drivers
   - Windows Features (PowerShell 7)
@@ -124,3 +126,15 @@ Lightweight and flexible Windows 11 build.
 - Customize
   - Import registry files
 - Remove [components](#removed)
+
+# TODO
+- https://answers.microsoft.com/en-us/windows/forum/all/disable-web-search-in-the-windows-11-start-menu/c4b156c3-1ebe-49f3-88c8-876f1da6eb25
+- https://windowsloop.com/how-to-remove-search-from-taskbar-in-windows-11/
+- https://www.minitool.com/news/remove-widgets-from-windows-11-taskbar.html
+- https://tencomputer.com/remove-chat-from-taskbar-on-windows-11/
+- set default terminal
+- default dark theme
+- terminal transparency, font
+- consider `oobe\bypassnro`, mb? 
+  - https://www.elevenforum.com/t/bypass-automate-windows-11-oobe.4809/
+  - https://github.com/maisondasilva/BypassNRO/blob/main/BypassNRO.cmd
