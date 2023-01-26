@@ -19,23 +19,25 @@ function prompt {
     Write-Host "$ `e[5 q" -NoNewline
 
     # Git Support
-    if ($status = Get-GitStatus -Force) {
-        $global:GitPromptSettings.ShowStatusWhenZero = 0
-        Write-Host "`r[" -ForegroundColor White -NoNewline
-        Write-Host "$([char]0xf17a) " -NoNewline
-        Write-Host "$path" -ForegroundColor DarkCyan -NoNewline
+    if (Get-Command git) {
+        if ($status = Get-GitStatus -Force) {
+            $global:GitPromptSettings.ShowStatusWhenZero = 0
+            Write-Host "`r[" -ForegroundColor White -NoNewline
+            Write-Host "$([char]0xf17a) " -NoNewline
+            Write-Host "$path" -ForegroundColor DarkCyan -NoNewline
         
 
-        Write-Host "|" -NoNewline 
-        Write-Host "$($status.Branch)" -ForegroundColor (Get-GitBranchStatusColor $status).ForegroundColor -NoNewline 
-        if ($status.BehindBy -ne 0 || $status.AheadBy -ne 0) {
-            Write-Host "$(Write-GitBranchStatus $status)" -NoNewline
-        }
-        Write-Host "$(Write-GitWorkingDirStatus $status)" -NoNewline
-        Write-Host "$(Write-GitIndexStatus $status)" -NoNewline
+            Write-Host "|" -NoNewline 
+            Write-Host "$($status.Branch)" -ForegroundColor (Get-GitBranchStatusColor $status).ForegroundColor -NoNewline 
+            if ($status.BehindBy -ne 0 || $status.AheadBy -ne 0) {
+                Write-Host "$(Write-GitBranchStatus $status)" -NoNewline
+            }
+            Write-Host "$(Write-GitWorkingDirStatus $status)" -NoNewline
+            Write-Host "$(Write-GitIndexStatus $status)" -NoNewline
 
-        Write-Host "]" -ForegroundColor White -NoNewline
-        Write-Host "$ " -NoNewline
+            Write-Host "]" -ForegroundColor White -NoNewline
+            Write-Host "$ " -NoNewline
+        }
     }
 
     return "`e[5 q"
