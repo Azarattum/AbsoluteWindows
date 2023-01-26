@@ -1,0 +1,38 @@
+Windows Registry Editor Version 5.00
+
+; PowerShell
+
+[-HKEY_CLASSES_ROOT\Directory\shell\PowerShell]
+
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\PowerShell7x64]
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShell7x64]
+[-HKEY_CLASSES_ROOT\Directory\ContextMenus\PowerShell7x64]
+[-HKEY_CLASSES_ROOT\Directory\shell\PowerShell7x64]
+[-HKEY_CLASSES_ROOT\Drive\shell\PowerShell7x64]
+[-HKEY_CLASSES_ROOT\LibraryFolder\background\shell\PowerShell7x64]
+
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\PowerShell7x86]
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShell7x86]
+[-HKEY_CLASSES_ROOT\Directory\ContextMenus\PowerShell7x86]
+[-HKEY_CLASSES_ROOT\Directory\shell\PowerShell7x86]
+[-HKEY_CLASSES_ROOT\Drive\shell\PowerShell7x86]
+[-HKEY_CLASSES_ROOT\LibraryFolder\background\shell\PowerShell7x86]
+
+; Give Access To
+
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\Drive\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\LibraryFolder\background\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\UserLibraryFolder\shellex\ContextMenuHandlers\Sharing]
+
+; Send To
+
+[-HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\SendTo]
+[-HKEY_CLASSES_ROOT\UserLibraryFolder\shellex\ContextMenuHandlers\SendTo]
+
+; 7-zip
+
+[HKEY_CURRENT_USER\Software\7-Zip\Options]
+"ContextMenu"=dword:00001126
