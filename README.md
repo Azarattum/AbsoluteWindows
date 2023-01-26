@@ -10,10 +10,11 @@ Lightweight and flexible Windows 11 build.
 - [x] Added [FiraCode NF](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) font
 - [x] Lightweight [hosts file](Custom/Files/w11/x64/Windows/System32/drivers/etc/hosts) to block telemetry
 - [x] Custom [powershell profile](Custom/Files/w11/x64/Users/Default/Documents/PowerShell/profile.ps1)
+- [x] Custom [terminal settings](Custom\Files\w11\x64\Users\Default\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json)
 - [x] Included [BTRFS driver](https://github.com/maharmstone/btrfs)
 - [x] Included [Apple drivers](Drivers/Install/w11/x64/)
-- [ ] Integrated [WinFsp](https://github.com/winfsp/winfsp/) and [SSHFS](https://github.com/winfsp/sshfs-win)
 - [x] Included [Keymapper](https://github.com/houmain/keymapper) with [custom config](Custom/Files/w11/x64/Windows/Keymapper/keymapper.conf)
+- [x] Set dark theme by default
 
 ## Removed
 ### Apps
@@ -24,58 +25,57 @@ Lightweight and flexible Windows 11 build.
 - Windows TIFF IFilter
 - Windows System Assessment Tool
 - Wordpad
-- Alarms & Clock
-- Camera
+- Clipchamp Video Editor
+- Cortana
 - Feedback Hub
+- Family
+- Gaming App (Xbox App)
 - Get Help
+- Maps
+- Microsoft Teams
 - My Office
 - News
+- People
+- Screen Sketch
+- Solitaire Collection
 - Tips
 - Todos
-- Your Phone
-- Cortana
+- Phone Link
 - Power Automate Desktop
+- Quick Assist
+- Wallet Service
 - Windows Mail
-- Windows Web Experience Pack - News and Interests Widgets App
+- Xbox Game Bar Plugin 
+- Xbox Game Bar 
+- Xbox Identity Provider 
+- Xbox Game Speech Window 
+- Xbox UI
 
-### Features
-- AAD Broker Plugin - Credential Handler for Microsoft Azure Logon
+### System Apps
 - Add Suggested Folders to Library Dialog
 - Async Text Service - Messaging extensions for People and Maps Apps
-- Bio Enrollment - Windows Hello Setup
 - Calling Shell App - App to host call progress on shell
 - CBSPreview - App for Camera Barcode Scanner
 - Content Delivery Manager - Automatic installation of sponsored or promoted apps, suggesstions and Ads
-- Credential Dialog Host - Authentication (Sign-in) shell support for Windows Hello
 - ECApp - Modern UI Dialog App for Eye Movement Control
-- Edge Classic Browser
-- Edge Developer Tools Client - An extension to edge containing tools for web developers
-- Lock App - Container App for Apps and Messages on the Lockscreen
 - Map Control
 - Narrator Quick Start - QuickStart Guide for Narrator
 - OOBE Network Captive Portal - Captive Network Portals support during OOBE-Phase of Windows
 - OOBE Network Connection Flow - Connection Flow Network Portals support during OOBE-Phase of Windows
 - Parental Controls - App for Parental Controls
 - People Experience Host - People Bar (People Hub)
-- Pinning Confirmation Dialog
-- Quick Assist App - Modern Remote Assistance App
 - Retail Demo Content
 - Secure Assessment Browser - Special Windows Mode for Exams (Take Test App)
 - Skype ORTC
-- Smart Screen - Windows Defender SmartScreen Functionality for Modern Apps
 - Windows Mixed Reality
-- Windows Reader (PDF)
+- Xbox Console Companion Back-end Client
 - Xbox Game Callable UI - Xbox Live
-- XGpu Eject Dialog - Modern Dialog App for safe removal of external GPUs
 
 ### Privacy
 - Assigned Access
 - Customer Experience Improvement Program (CEIP)
-- Face Recognition
 - Kernel Debugging
 - Location Service
-- Picture Password
-- Pin SignIn Support
 - Unified Telemetry Client (Asimov)
 - WiFi Network Manager (WiFi Sense)
 - Windows Error Reporting
@@ -100,10 +100,17 @@ Lightweight and flexible Windows 11 build.
 ## Registry
 - [Disabled Windows consumer features (advertised apps)](Custom/Registry/w11/x64/consumer.reg)
 - [Disabled telemetry](Custom/Registry/w11/x64/telemetry.reg)
+- [Disabled useless services](Custom/Registry/w11/x64/services.reg)
 - [Set Windows Updates to "Notify of download and installation"](Custom/Registry/w11/x64/updates.reg)
 - [Set file explorer to "This PC" and show file extensions](Custom/Registry/w11/x64/explorer.reg)
+- [Show full paths in explorer](Custom/Registry/w11/x64/explorer.reg)
+- [Hide folders from "This PC"](Custom/Registry/w11/x64/explorer.reg)
+- [Disabled Bing in start search](Custom/Registry/w11/x64/shell.reg)
+- [Hidden search, chat, widgets from taskbar](Custom/Registry/w11/x64/shell.reg)
+- [Bypassed Microsoft account requirement](Custom/Registry/w11/x64/bypass.reg)
 - [Applied profile script for new users](Custom/Registry/w11/x64/profile.reg)
 - [Hidden recycle bin from desktop](Custom/Registry/w11/x64/desktop.reg)
+- [Cleaned context menu](Custom/Registry/w11/x64/context.reg)
 
 ## Reproduce
 - Accuire [Windows 11 ISO](https://www.microsoft.com/software-download/windows11)
@@ -126,15 +133,4 @@ Lightweight and flexible Windows 11 build.
 - Customize
   - Import registry files
 - Remove [components](#removed)
-
-# TODO
-- https://answers.microsoft.com/en-us/windows/forum/all/disable-web-search-in-the-windows-11-start-menu/c4b156c3-1ebe-49f3-88c8-876f1da6eb25
-- https://windowsloop.com/how-to-remove-search-from-taskbar-in-windows-11/
-- https://www.minitool.com/news/remove-widgets-from-windows-11-taskbar.html
-- https://tencomputer.com/remove-chat-from-taskbar-on-windows-11/
-- set default terminal
-- default dark theme
-- terminal transparency, font
-- consider `oobe\bypassnro`, mb? 
-  - https://www.elevenforum.com/t/bypass-automate-windows-11-oobe.4809/
-  - https://github.com/maisondasilva/BypassNRO/blob/main/BypassNRO.cmd
+- Run [the script](./attrib.bat) to apply file attributes (must run AFTER file integration)
