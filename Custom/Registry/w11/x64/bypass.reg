@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; Offline install
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE]
+"BypassNRO"=dword:1
+
+; No watermark
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\Activation]
+"Manual"=dword:1
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"PaintDesktopVersion"=dword:0
