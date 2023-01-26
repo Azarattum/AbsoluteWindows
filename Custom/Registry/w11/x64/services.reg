@@ -1,0 +1,67 @@
+Windows Registry Editor Version 5.00
+
+; Cortana
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\cnghwassist]
+"Start"=dword:4
+
+; Hyper-V
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\hvcrash]
+"Start"=dword:4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\HvHost]
+"Start"=dword:4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmgid]
+"Start"=dword:4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicguestinterface]
+"Start"=dword:4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicheartbeat]
+"Start"=dword:4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmickvpexchange]
+"Start"=dword:4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicrdv]
+"Start"=dword:4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicshutdown]
+"Start"=dword:4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmictimesync]
+"Start"=dword:4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicvmsession]
+"Start"=dword:4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicvss]
+"Start"=dword:4
+
+; Telephony
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PhoneSvc]
+"Start"=dword:4
+
+; Remote Access
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\RemoteAccess]
+"Start"=dword:4
+
+; SMS
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SmsRouter]
+"Start"=dword:4
+
+; SNMP Trap
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SNMPTRAP]
+"Start"=dword:4
+
+; IPX/SPX
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\IpxlatCfgSvc]
+"Start"=dword:4
+
+; Content distribution
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PeerDistSvc]
+"Start"=dword:4
+
+; Certificate propagation
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\CertPropSvc]
+"Start"=dword:4
