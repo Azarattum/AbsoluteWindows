@@ -112,6 +112,7 @@ Lightweight and flexible Windows 11 build.
 - [Hidden recycle bin from desktop](Custom/Registry/w11/x64/desktop.reg)
 - [Cleaned context menu](Custom/Registry/w11/x64/context.reg)
 - [Cleaned tray icons](Custom/Registry/w11/x64/tray.reg)
+- [Changed default TTL to 65](Custom/Registry/w11/x64/ttl.reg)
 
 ## Reproduce
 - Accuire [Windows 11 ISO](https://www.microsoft.com/software-download/windows11)
