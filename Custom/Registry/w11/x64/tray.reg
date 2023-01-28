@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; Windows Security
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray]
+"HideSystray"=dword:00000001
+
+; NVIDIA Panel
+[HKEY_CURRENT_USER\SOFTWARE\NVIDIA Corporation\NvTray]
+"StartOnLogin"=dword:00000000
+
+; Bluetooth
+[HKEY_CURRENT_USER\Control Panel\Bluetooth]
+"Notification Area Icon"=dword:00000000
