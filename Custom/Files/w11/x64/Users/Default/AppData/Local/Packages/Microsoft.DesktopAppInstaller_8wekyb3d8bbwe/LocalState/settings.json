@@ -1,0 +1,4 @@
+{
+    "$schema": "https://aka.ms/winget-settings.schema.json",
+    "telemetry": {"disable": true}
+}
