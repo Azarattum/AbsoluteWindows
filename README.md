@@ -42,11 +42,9 @@ Check out the [removed packages list](Bin/Lists/RemovePkgsList.txt) & [disabled 
 
 ## Reproduce
 
-- Accuire [Windows 11 ISO](https://www.microsoft.com/software-download/windows11)
-- Clone [Patcher Repo](https://github.com/JosephM101/Force-Windows-11-Install)
-- Patch ISO file
+- Accuire [Windows 11 ISO](https://uupdump.net/)
 - Install [MSMG Toolkit](https://msmgtoolkit.in/)
-- Copy `Custom`, `Drivers` and `Packs` to MSMG Toolkit
+- Copy all the files from the repo to MSMG Toolkit folder
 - Acquire all the components from `.txt` files:
   - [keymapper.exe.txt](Custom/Files/w11/x64/Windows/Keymapper/keymapper.exe.txt)
   - [FiraCode NF.txt](Custom/Fonts/FiraCode%20NF.txt)
@@ -54,12 +52,19 @@ Check out the [removed packages list](Bin/Lists/RemovePkgsList.txt) & [disabled 
   - [PowerShell7.txt](Packs/PowerShell7/PowerShell7.txt)
   - [VC.txt](Packs/VCRuntime/w11/VC.txt)
 - Integrate
-  - Drivers
-  - Windows Features (PowerShell 7)
+  - Windows Drivers
+  - Windows Features
+    - Windows PowerShell 7
+    - Microsoft Visual C++ Runtime
   - Windows Custom Features
-    - Fonts
-    - System Files
+    - Custom System Files
+    - Custom Fonts
+- Remove
+  - Remove Windows Components Using Package List (ToolKitHelper Method)
 - Customize
-  - Import registry files
-- Remove [components](#removed)
+  - Disable Windows Features using Features List
+  - Import Custom Registry Setting from Registry File
+  - Apply Tweaks
+    - Disable Windows 11 Installer Hardware Check
+    - Enable Windows Local Account
 - Run [the script](./attrib.bat) to apply file attributes (must run AFTER file integration)
