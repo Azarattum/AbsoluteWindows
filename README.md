@@ -20,7 +20,7 @@ Lightweight and flexible Windows 11 build.
 
 ## Removed
 
-Check out the [removed packages list](Bin/Lists/RemovePkgsList.txt) to see all the removed apps and features.
+Check out the [removed packages list](Bin/Lists/RemovePkgsList.txt) & [disabled features list](Bin/Lists/DisableFeaturesList.txt) to see all the removed apps and features.
 
 ## Registry
 

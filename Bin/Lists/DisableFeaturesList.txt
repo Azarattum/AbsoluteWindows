@@ -1,0 +1,3 @@
+MicrosoftWindowsPowerShellV2
+MicrosoftWindowsPowerShellV2Root
+WorkFolders-Client
