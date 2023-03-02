@@ -1,9 +1,11 @@
 # Absolute Windows
+
 > Based on: Windows 11 Home
 
 Lightweight and flexible Windows 11 build.
 
 ## Added
+
 - [x] Patched to [bypass compatibility checks](https://github.com/JosephM101/Force-Windows-11-Install)
 - [x] Updated to [PowerShell 7](https://download.ru/folders/9Q7wRWOc)
 - [x] Included [C++ runtime](https://download.ru/folders/5wAAnH5F)
@@ -17,7 +19,9 @@ Lightweight and flexible Windows 11 build.
 - [x] Set dark theme by default
 
 ## Removed
+
 ### Apps
+
 - Internet Explorer
 - Game Explorer
 - Windows Media Player
@@ -45,13 +49,14 @@ Lightweight and flexible Windows 11 build.
 - Quick Assist
 - Wallet Service
 - Windows Mail
-- Xbox Game Bar Plugin 
-- Xbox Game Bar 
-- Xbox Identity Provider 
-- Xbox Game Speech Window 
+- Xbox Game Bar Plugin
+- Xbox Game Bar
+- Xbox Identity Provider
+- Xbox Game Speech Window
 - Xbox UI
 
 ### System Apps
+
 - Add Suggested Folders to Library Dialog
 - Async Text Service - Messaging extensions for People and Maps Apps
 - Calling Shell App - App to host call progress on shell
@@ -72,6 +77,7 @@ Lightweight and flexible Windows 11 build.
 - Xbox Game Callable UI - Xbox Live
 
 ### Privacy
+
 - Assigned Access
 - Customer Experience Improvement Program (CEIP)
 - Kernel Debugging
@@ -82,6 +88,7 @@ Lightweight and flexible Windows 11 build.
 - Windows Insider Hub
 
 ### Remoting
+
 - MultiPoint Connector
 - OneDrive Desktop Client
 - Remote Assistance
@@ -90,6 +97,7 @@ Lightweight and flexible Windows 11 build.
 - Work Folders Client
 
 ### System Components
+
 - Device Lockdown (Embedded Experience)
 - Ease of Access Themes
 - Easy Transfer
@@ -98,6 +106,7 @@ Lightweight and flexible Windows 11 build.
 - Windows To Go
 
 ## Registry
+
 - [Disabled Windows consumer features (advertised apps)](Custom/Registry/w11/x64/consumer.reg)
 - [Disabled telemetry](Custom/Registry/w11/x64/telemetry.reg)
 - [Disabled useless services](Custom/Registry/w11/x64/services.reg)
@@ -115,6 +124,7 @@ Lightweight and flexible Windows 11 build.
 - [Changed default TTL to 65](Custom/Registry/w11/x64/ttl.reg)
 
 ## Reproduce
+
 - Accuire [Windows 11 ISO](https://www.microsoft.com/software-download/windows11)
 - Clone [Patcher Repo](https://github.com/JosephM101/Force-Windows-11-Install)
 - Patch ISO file
@@ -125,7 +135,7 @@ Lightweight and flexible Windows 11 build.
   - [FiraCode NF.txt](Custom/Fonts/FiraCode%20NF.txt)
   - [btrfs.txt](Drivers/Install/w11/x64/btrfs.txt)
   - [PowerShell7.txt](Packs/PowerShell7/PowerShell7.txt)
-  - [VC.txt](Packs/VC/w11/VC.txt)
+  - [VC.txt](Packs/VCRuntime/w11/VC.txt)
 - Integrate
   - Drivers
   - Windows Features (PowerShell 7)
