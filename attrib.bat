@@ -34,4 +34,15 @@ attrib +h "Program Files (x86)/Windows NT"
 attrib +h "Program Files (x86)/Windows Sidebar"
 attrib +h "Program Files (x86)/WindowsPowerShell"
 
+attrib +s +h "Game Files/desktop.ini"
+attrib +s +h "Program Files/desktop.ini"
+attrib +s +h "Program Files (x86)/desktop.ini"
+attrib +s +h "ProgramData/desktop.ini"
+attrib +s +h "ProgramData/Microsoft/Windows/Start Menu/Programs/desktop.ini"
+attrib +s +h "Users/desktop.ini"
+attrib +s +h "Users/Default/desktop.ini"
+attrib +s +h "Users/Default/AppData/desktop.ini"
+attrib +s +h "Users/Public/desktop.ini"
+attrib +s +h "Windows/desktop.ini"
+
 pause
