@@ -58,12 +58,7 @@ function Open-NewWindow () {
 }
 
 function Edit-InVim ($file) {
-    $file = $file -replace "\\", "/" -replace " ", "\ "
-    $null = $file -match "([A-Za-z]):/"
-    if ($Matches) {
-        $file = $file -replace "$($Matches[1]):", "/mnt/$($Matches[1].toLower())"
-    }
-    bash -c "nvim $file"
+    & "$env:ProgramFiles/Neovim/bin/nvim.exe" $file
 }
 
 function Get-AllChildItems {
