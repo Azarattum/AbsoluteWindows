@@ -1,6 +1,6 @@
 # Absolute Windows
 
-> Based on: Windows 11 Home
+> Based on: Windows 11 Home, version 22H2 (22621.1344)
 
 Lightweight and flexible Windows 11 build.
 
@@ -20,90 +20,7 @@ Lightweight and flexible Windows 11 build.
 
 ## Removed
 
-### Apps
-
-- Internet Explorer
-- Game Explorer
-- Windows Media Player
-- Windows Photo Viewer
-- Windows TIFF IFilter
-- Windows System Assessment Tool
-- Wordpad
-- Clipchamp Video Editor
-- Cortana
-- Feedback Hub
-- Family
-- Gaming App (Xbox App)
-- Get Help
-- Maps
-- Microsoft Teams
-- My Office
-- News
-- People
-- Screen Sketch
-- Solitaire Collection
-- Tips
-- Todos
-- Phone Link
-- Power Automate Desktop
-- Quick Assist
-- Wallet Service
-- Windows Mail
-- Xbox Game Bar Plugin
-- Xbox Game Bar
-- Xbox Identity Provider
-- Xbox Game Speech Window
-- Xbox UI
-
-### System Apps
-
-- Add Suggested Folders to Library Dialog
-- Async Text Service - Messaging extensions for People and Maps Apps
-- Calling Shell App - App to host call progress on shell
-- CBSPreview - App for Camera Barcode Scanner
-- Content Delivery Manager - Automatic installation of sponsored or promoted apps, suggesstions and Ads
-- ECApp - Modern UI Dialog App for Eye Movement Control
-- Map Control
-- Narrator Quick Start - QuickStart Guide for Narrator
-- OOBE Network Captive Portal - Captive Network Portals support during OOBE-Phase of Windows
-- OOBE Network Connection Flow - Connection Flow Network Portals support during OOBE-Phase of Windows
-- Parental Controls - App for Parental Controls
-- People Experience Host - People Bar (People Hub)
-- Retail Demo Content
-- Secure Assessment Browser - Special Windows Mode for Exams (Take Test App)
-- Skype ORTC
-- Windows Mixed Reality
-- Xbox Console Companion Back-end Client
-- Xbox Game Callable UI - Xbox Live
-
-### Privacy
-
-- Assigned Access
-- Customer Experience Improvement Program (CEIP)
-- Kernel Debugging
-- Location Service
-- Unified Telemetry Client (Asimov)
-- WiFi Network Manager (WiFi Sense)
-- Windows Error Reporting
-- Windows Insider Hub
-
-### Remoting
-
-- MultiPoint Connector
-- OneDrive Desktop Client
-- Remote Assistance
-- Remote Desktop Server
-- Remote Registry
-- Work Folders Client
-
-### System Components
-
-- Device Lockdown (Embedded Experience)
-- Ease of Access Themes
-- Easy Transfer
-- File History
-- Storage Spaces
-- Windows To Go
+Check out the [removed packages list](Bin/Lists/RemovePkgsList.txt) to see all the removed apps and features.
 
 ## Registry
 
