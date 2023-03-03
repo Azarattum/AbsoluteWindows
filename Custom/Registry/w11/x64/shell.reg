@@ -19,7 +19,3 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Communications]
 "ConfigureChatAutoInstall"=dword:0
-
-; Adjust time format
-[HKEY_CURRENT_USER\Control Panel\International]
-"sShortDate"="ddd, d MMM"
