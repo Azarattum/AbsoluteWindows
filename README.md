@@ -56,6 +56,7 @@ Check out the [removed packages list](Bin/Lists/RemovePkgsList.txt) & [disabled 
   - Windows Features
     - Windows PowerShell 7
     - Microsoft Visual C++ Runtime
+  - Windows Updates (if needed)
   - Windows Custom Features
     - Custom System Files
     - Custom Fonts
@@ -65,6 +66,8 @@ Check out the [removed packages list](Bin/Lists/RemovePkgsList.txt) & [disabled 
   - Disable Windows Features using Features List
   - Import Custom Registry Setting from Registry File
   - Apply Tweaks
-    - Disable Windows 11 Installer Hardware Check
     - Enable Windows Local Account
 - Run [the script](./attrib.bat) to apply file attributes (must run AFTER file integration)
+- Save ISO
+- Apply [TPM Bypass](https://github.com/JosephM101/Force-Windows-11-Install)
+- After installing the ISO you might want to run [software.ps1](./software.ps1) script to install some programs
