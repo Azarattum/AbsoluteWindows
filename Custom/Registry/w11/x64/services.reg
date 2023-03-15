@@ -4,40 +4,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\cnghwassist]
 "Start"=dword:4
 
-; Hyper-V
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\hvcrash]
-"Start"=dword:4
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\HvHost]
-"Start"=dword:4
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmgid]
-"Start"=dword:4
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicguestinterface]
-"Start"=dword:4
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicheartbeat]
-"Start"=dword:4
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmickvpexchange]
-"Start"=dword:4
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicrdv]
-"Start"=dword:4
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicshutdown]
-"Start"=dword:4
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmictimesync]
-"Start"=dword:4
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicvmsession]
-"Start"=dword:4
-
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\vmicvss]
-"Start"=dword:4
-
 ; Telephony
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PhoneSvc]
 "Start"=dword:4
