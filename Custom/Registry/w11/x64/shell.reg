@@ -11,6 +11,8 @@ Windows Registry Editor Version 5.00
 ; Hide search field from taskbar
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
 "SearchboxTaskbarMode"=dword:0
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"SearchOnTaskbarMode"=dword:0
 
 ; Hide widgets & chat from taskbar
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
