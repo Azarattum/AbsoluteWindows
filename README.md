@@ -1,6 +1,6 @@
 # Absolute Windows
 
-> Based on: Windows 11 Home, version 22H2 (22621.1344)
+> Based on: Windows 11 Home, version 22H2 (22621.1413)
 
 Lightweight and flexible Windows 11 build.
 
