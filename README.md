@@ -67,7 +67,11 @@ Check out the [removed packages list](Bin/Lists/RemovePkgsList.txt) & [disabled 
   - Import Custom Registry Setting from Registry File
   - Apply Tweaks
     - Enable Windows Local Account
-- Run [the script](./postprocess.bat) to apply file attributes (must run AFTER file integration)
-- Save ISO
+- Run [the postprocessing script](./postprocess.bat) as administrator (must run AFTER file integration)
+- Apply
+  - Cleanup Source Images using DISM Cleanup-Image
+  - Apply & Save Changes to Source Images
+- Convert WIM Image to ESD Image
+- Make a DVD ISO Image
 - Apply [TPM Bypass](https://github.com/JosephM101/Force-Windows-11-Install)
 - After installing the ISO you might want to run [software.ps1](./software.ps1) script to install some programs
