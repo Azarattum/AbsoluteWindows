@@ -67,7 +67,7 @@ Check out the [removed packages list](Bin/Lists/RemovePkgsList.txt) & [disabled 
   - Import Custom Registry Setting from Registry File
   - Apply Tweaks
     - Enable Windows Local Account
-- Run [the script](./attrib.bat) to apply file attributes (must run AFTER file integration)
+- Run [the script](./postprocess.bat) to apply file attributes (must run AFTER file integration)
 - Save ISO
 - Apply [TPM Bypass](https://github.com/JosephM101/Force-Windows-11-Install)
 - After installing the ISO you might want to run [software.ps1](./software.ps1) script to install some programs

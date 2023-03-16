@@ -19,9 +19,9 @@ attrib -h "Users/Default/AppData"
 attrib +r "Users/Default/AppData"
 attrib +h "Users/Default/NTUSER.DAT"
 
-takeown /R /F ".\Program Files\ModifiableWindowsApps\"
+takeown /F ".\Program Files\ModifiableWindowsApps"
 echo Y| cacls "Program Files/ModifiableWindowsApps" /p Administrators:f
-takeown /R /F ".\Program Files\WindowsApps\"
+takeown /F ".\Program Files\WindowsApps"
 echo Y| cacls "Program Files/WindowsApps" /p Administrators:f
 attrib -h -s "Program Files/Windows Sidebar"
 attrib -h -s "Program Files (x86)/Windows Sidebar"
@@ -57,26 +57,18 @@ attrib +s +h "Windows/desktop.ini"
 
 takeown /R /F ".\Program Files (x86)\Internet Explorer"
 echo Y| cacls "Program Files (x86)/Internet Explorer" /p Administrators:f
-del /Q "Program Files (x86)/Internet Explorer"
-rmdir "Program Files (x86)/Internet Explorer"
 
-del /Q "PerfLogs"
-rmdir "PerfLogs"
+rmdir /S /Q "PerfLogs"
+rmdir /S /Q "Program Files (x86)/Internet Explorer"
+rmdir /S /Q "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Windows PowerShell"
 
-takeown /R /F ".\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools"
-echo Y| cacls "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/System Tools" /p Administrators:f
-takeown /R /F ".\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessibility"
-echo Y| cacls "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Accessibility" /p Administrators:f
 
-del /A /Q "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Accessibility"
-echo Y| rmdir /S "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Accessibility"
-del /A /Q "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Accessories"
-rmdir "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Accessories"
-del /A /Q "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Maintenance"
-rmdir "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Maintenance"
-del /A /Q "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Windows PowerShell"
-rmdir "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Windows PowerShell"
-del /A /Q "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/System Tools"
-echo Y| rmdir /S "Users/Default/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/System Tools"
+move /Y "ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools" "Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\"
+rmdir /S /Q "ProgramData\Microsoft\Windows\Start Menu\Programs\Accessibility"
+rmdir /S /Q "ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories"
+rmdir /S /Q "ProgramData\Microsoft\Windows\Start Menu\Programs\Maintenance"
+rmdir /S /Q "ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
+rmdir /S /Q "ProgramData\Microsoft\Windows\Start Menu\Programs\System Tools"
+rmdir /S /Q "ProgramData\Microsoft\Windows\Start Menu\Programs\Windows PowerShell"
 
 pause
