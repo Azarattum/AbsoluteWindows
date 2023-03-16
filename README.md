@@ -51,6 +51,7 @@ Check out the [removed packages list](Bin/Lists/RemovePkgsList.txt) & [disabled 
   - [btrfs.txt](Drivers/Install/w11/x64/btrfs.txt)
   - [PowerShell7.txt](Packs/PowerShell7/PowerShell7.txt)
   - [VC.txt](Packs/VCRuntime/w11/VC.txt)
+- Apply [TPM Bypass](https://github.com/JosephM101/Force-Windows-11-Install)
 - Integrate
   - Windows Drivers
   - Windows Features
@@ -73,5 +74,4 @@ Check out the [removed packages list](Bin/Lists/RemovePkgsList.txt) & [disabled 
   - Apply & Save Changes to Source Images
 - Convert WIM Image to ESD Image
 - Make a DVD ISO Image
-- Apply [TPM Bypass](https://github.com/JosephM101/Force-Windows-11-Install)
 - After installing the ISO you might want to run [software.ps1](./software.ps1) script to install some programs
