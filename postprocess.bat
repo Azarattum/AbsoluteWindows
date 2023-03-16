@@ -70,5 +70,6 @@ rmdir /S /Q "ProgramData\Microsoft\Windows\Start Menu\Programs\Maintenance"
 rmdir /S /Q "ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
 rmdir /S /Q "ProgramData\Microsoft\Windows\Start Menu\Programs\System Tools"
 rmdir /S /Q "ProgramData\Microsoft\Windows\Start Menu\Programs\Windows PowerShell"
+rmdir /S /Q "ProgramData\Microsoft\Windows\Start Menu\Programs\PowerShell"
 
 pause
