@@ -8,6 +8,7 @@ CallingShellApp
 CBSPreview
 CEIP
 Clipchamp
+CommunicationsApps
 ContentDeliveryManager
 Cortana
 DeviceLockdown
@@ -70,3 +71,4 @@ XboxIdentityProvider
 XboxSpeechToTextOverlay
 XboxTCUI
 YourPhone
+ZuneVideo
