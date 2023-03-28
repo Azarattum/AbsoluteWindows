@@ -4,6 +4,10 @@
 
 Lightweight and flexible Windows 11 build.
 
+## Installation
+
+Please refer to [INSTALLATION.md](./INSTALLATION.md) for step-by-step instructions on how to install Windows using a bootable USB drive.
+
 ## Added
 
 - [x] Patched to [bypass compatibility checks](https://github.com/JosephM101/Force-Windows-11-Install)
