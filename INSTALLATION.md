@@ -54,5 +54,13 @@ After completing the above steps, you may want to:
 13. Install any additional programs or applications that you need for your work or entertainment.
     > You can use [winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/) to install many popular software packages easily.
 
+### Known Issues and Their Solutions
+
+- If Windows doesn't display video thumbnails, just download the codec pack with:
+  "`winget install CodecGuide.K-LiteCodecPack.Basic`"
+- If Windows doesn't display Startup apps, make sure these folders exist:
+  "`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup`"
+  "`%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`"
+
 Congratulations, you have successfully installed and updated your Absolute Windows!
 Enjoy <3
